@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>{APP_NAME}</groupId>
-	<artifactId>{APP_NAME}</artifactId>
+	<groupId>mx.com.everis</groupId>
+	<artifactId>chatterbot</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
-	<name>{APP_NAME}</name>
+	<name>chatterbot</name>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -83,14 +83,14 @@
 		<profile>
 			<id>openshift</id>
 			<build>
-				<finalName>{APP_NAME}</finalName>
+				<finalName>chatterbot</finalName>
 				<plugins>
 					<plugin>
 						<artifactId>maven-war-plugin</artifactId>
 						<version>2.1.1</version>
 						<configuration>
 							<outputDirectory>webapps</outputDirectory>
-							<warName>ROOT</warName>
+							<warName>chatterbot</warName>
 						</configuration>
 					</plugin>
 				</plugins>
